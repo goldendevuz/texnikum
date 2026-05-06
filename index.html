@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>1-SON Texnikum | Kasb-hunar ta'limi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>🏫 1-SON <span>TEXNIKUM</span></h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Bosh sahifa</a></li>
+                <li><a href="#directions">Yo'nalishlar</a></li>
+                <li><a href="#startups">Startuplar</a></li>
+                <li><a href="#gallery">Galereya</a></li>
+                <li><a href="#teachers">O'qituvchilar</a></li>
+                <li><a href="#application" class="apply-btn">Ariza topshirish</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h2>Kelajagingni <span class="highlight">biz bilan</span> boshlang!</h2>
+            <p>Zamonaviy kasb-hunar texnikumi  6+ yo'nalish, 45+ tajribali o'qituvchi va 18% bitiruvchilar bandligi.</p>
+            <div class="hero-buttons">
+                <a href="#directions" class="btn primary">Yo'nalishlar</a>
+                <a href="#application" class="btn secondary">Ariza qoldirish</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Students">
+        </div>
+    </div>
+</section>
+
+<!-- ========== REKLAMA BLOKI ========== -->
+<section class="promo-small">
+    <div class="container">
+        <div class="promo-small-card">
+            <div class="promo-small-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="promo-small-text">
+                <h4>WWC STUDIO | Professional veb-saytlar</h4>
+                <p>3D Animatsiyalar · 360° Effektlar · Tez va moslashuvchan</p>
+            </div>
+            <a href="https://www.wwc-studio.uz/" target="_blank" class="promo-small-btn">➡</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== YO'NALISHLAR ========== -->
+<section id="directions" class="directions">
+    <div class="container">
+        <h2 class="section-title">Bizning <span class="highlight">yo'nalishlar</span></h2>
+        <div class="directions-grid">
+            <div class="direction-card" data-direction="comp">
+                <i class="fas fa-network-wired"></i>
+                <h3>Kompyuter tarmoq dasturchisi</h3>
+                <p>Tarmoq administratsiyasi, dasturlash, serverlar</p>
+                <button class="more-btn">Batafsil →</button>
+            </div>
+            <div class="direction-card" data-direction="seller">
+                <i class="fas fa-store"></i>
+                <h3>Sotuvchi</h3>
+                <p>Savdo texnikasi, mijozlar bilan ishlash, marketing</p>
+                <button class="more-btn">Batafsil →</button>
+            </div>
+            <div class="direction-card" data-direction="sewing">
+                <i class="fas fa-cut"></i>
+                <h3>Tikuvchi</h3>
+                <p>Zamonaviy tikuv texnikasi, dizayn, moda</p>
+                <button class="more-btn">Batafsil →</button>
+            </div>
+            <div class="direction-card" data-direction="electric">
+                <i class="fas fa-bolt"></i>
+                <h3>Elektrik</h3>
+                <p>Elektr sxemalari, xavfsizlik, avtomatika</p>
+                <button class="more-btn">Batafsil →</button>
+            </div>
+            <div class="direction-card" data-direction="welder">
+                <i class="fas fa-wrench"></i>
+                <h3>Payvandchi</h3>
+                <p>Argon, elektr payvand, metall konstruksiyalar</p>
+                <button class="more-btn">Batafsil →</button>
+            </div>
+            <div class="direction-card" data-direction="auto">
+                <i class="fas fa-car"></i>
+                <h3>AVTO</h3>
+                <p>Avtomobil diagnostikasi, remont, elektronika</p>
+                <button class="more-btn">Batafsil →</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="directionModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div id="modalContent"></div>
+    </div>
+</div>
+
+<!-- ========== STARTUPLAR VA LOYIHALAR ========== -->
+<section id="startups" class="startups">
+    <div class="container">
+        <h2 class="section-title">O'quvchilar <span class="highlight">startuplari va loyihalari</span></h2>
+        <div class="startups-grid">
+            <div class="startup-card">
+                <div class="startup-icon"><i class="fas fa-rocket"></i></div>
+                <h3>WWC STUDIO UZ</h3>
+                <p>Web-sayt yasab berish xizmati. 500+ foydalanuvchi, 10+ Web-saytlar.</p>
+                <div class="startup-stats">
+                    <span><i class="fas fa-users"></i> 500+ user</span>
+                    <span><i class="fas fa-trophy"></i> Eng katta loyha</span>
+                </div>
+                <div class="startup-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.wwc-studio.uz/"><i class="fas fa-globe"></i> Website</a>
+                </div>
+                <div class="student-social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="startup-card">
+                <div class="startup-icon"><i class="fas fa-microchip"></i></div>
+                <h3>ANIMEDU.UZ</h3>
+                <p>Animedu.uz-bu sayt anime dunyosi ichiga olgan va o'zbek tiliga tarjima qilingayhon va joylanga anime sayt.</p>
+                <div class="startup-stats">
+                    <span><i class="fas fa-users"></i> 300+ kuzatuvchi</span>
+                    <span><i class="fas fa-trophy"></i> Eng kuchli dizayin</span>
+                </div>
+                <div class="startup-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.animedu.uz/"><i class="fas fa-globe"></i> Website</a>
+                </div>
+                <div class="student-social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="startup-card">
+                <div class="startup-icon"><i class="fas fa-chart-line"></i></div>
+                <h3></h3>
+                <p>Bozor tahlili va prognozlash tizimi.</p>
+                <div class="startup-stats">
+                    <span><i class="fas fa-users"></i> 1000+ foydalanuvchi</span>
+                    <span><i class="fas fa-trophy"></i> Innovatsiya 2024</span>
+                </div>
+                <div class="startup-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fas fa-globe"></i> Website</a>
+                </div>
+                <div class="student-social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="startup-card">
+                <div class="startup-icon"><i class="fas fa-robot"></i></div>
+                <h3>SecondSaverBot</h3>
+                <p>Quyidagi platformalardan videolarni bir zumda yuklab oling 👇
+                    ✅ Instagram Reels, Stories
+                    ✅ TikTok
+                    ✅ X (Twitter)
+                    ✅ Facebook</p>
+                <div class="startup-stats">
+                    <span><i class="fas fa-users"></i> 5000+ foydalanuvchi</span>
+                    <span><i class="fas fa-trophy"></i> Eng yaxshi bot 2024</span>
+                </div>
+                <div class="startup-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://t.me/SecondSaverBot"><i class="fab fa-telegram"></i> Bot</a>
+                </div>
+                <div class="student-social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- ========== O'QUVCHILAR YUTUQLARI ========== -->
+<section class="student-achievements">
+    <div class="container">
+        <h2 class="section-title">O'quvchilar <span class="highlight">yutuqlari</span></h2>
+        <div class="achievements-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide achievement-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Shaxsiy olimpiyada</h3>
+                    <p>Dasturlash bo'yicha 1-o'rin - 2025</p>
+                </div>
+                <div class="swiper-slide achievement-item">
+                    <i class="fas fa-medal"></i>
+                    <h3>VILOYAT TANLOVI</h3>
+                    <p>Eng yaxshi loyiha - 2024</p>
+                </div>
+                <div class="swiper-slide achievement-item">
+                    <i class="fas fa-award"></i>
+                    <h3>Startup tanlovi</h3>
+                    <p>1-o'rin va grant - 2024</p>
+                </div>
+                <div class="swiper-slide achievement-item">
+                    <i class="fas fa-star"></i>
+                    <h3>Eng yaxshi bitiruvchi</h3>
+                    <p>Professional mahorat - 2024</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== OTZIVLAR ========== -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-title">Bitiruvchilar <span class="highlight">fikrlari</span></h2>
+        <div class="testimonials-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Texnikumda o'qiganimdan juda mamnunman. Dasturlash bo'yicha zamonaviy bilimlar oldim va hozir yirik IT kompaniyada ishlayapman.</p>
+                    <h4>- Azimov Anvar</h4>
+                    <div class="student-social small">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Ustozlar juda bilimli va tajribali. Elektrik yo'nalishida amaliy ko'nikmalarga ega bo'ldim.</p>
+                    <h4>- Karimov Shaxboz</h4>
+                    <div class="student-social small">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>O'qish davomida juda ko'p loyihalarda qatnashdim. Hozir o'z biznesimni ochdim.</p>
+                    <h4>- Mixridinov Avazbek</h4>
+                    <div class="student-social small">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== TEXNIKUM RASMLARI ========== --
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h2 class="section-title">Texnikum <span class="highlight">rasmlari</span></h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="" alt="Classroom"></div>
+            <div class="gallery-item"><img src="" alt="Lab"></div>
+            <div class="gallery-item"><img src="" alt="Students"></div>
+            <div class="gallery-item"><img src="" alt="Workshop"></div>
+            <div class="gallery-item"><img src="" alt="Library"></div>
+            <div class="gallery-item"><img src="" alt="Computer lab"></div>
+        </div>
+    </div>
+</section>
+>
+<!-- ========== O'QITUVCHILAR (AYLANUVCHI CAROUSEL) ========== --
+<section id="teachers" class="teachers">
+    <div class="container">
+        <h2 class="section-title">Tajribali <span class="highlight">o'qituvchilar</span></h2>
+        <div class="teachers-slider swiper">
+            <div class="swiper-wrapper" id="teachersSwiperWrapper"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+>
+<!-- ========== ARIZA TOPSHIRISH ========== -->
+<section id="application" class="application">
+    <div class="container">
+        <h2 class="section-title">Ariza <span class="highlight">topshirish</span></h2>
+        <div class="form-container">
+            <form id="applicationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Familiya Ism *</label>
+                        <input type="text" id="fullname" placeholder="Ism familiyangiz" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar"></i> Tug'ilgan sana *</label>
+                        <input type="date" id="birthdate" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-venus-mars"></i> Yoshi</label>
+                        <input type="number" id="age" readonly placeholder="Avtomatik hisoblanadi">
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-map-pin"></i> Yashash manzili *</label>
+                        <select id="region" required>
+                            <option value="">Viloyat tanlang</option>
+                            <option>Toshkent shahri</option>
+                            <option>Toshkent viloyati</option>
+                            <option>Samarqand viloyati</option>
+                            <option>Buxoro viloyati</option>
+                            <option>Andijon viloyati</option>
+                            <option>Farg'ona viloyati</option>
+                            <option>Namangan viloyati</option>
+                            <option>Qashqadaryo</option>
+                            <option>Surxondaryo</option>
+                            <option>Navoiy</option>
+                            <option>Jizzax</option>
+                            <option>Sirdaryo</option>
+                            <option>Xorazm</option>
+                            <option>Qoraqalpog'iston</option>
+                        </select>
+                        <input type="text" id="district" placeholder="Tumaningiz" style="margin-top: 10px;" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> Telefon no'mer *</label>
+                        <input type="tel" id="phone" placeholder="+998 xx xxx xx xx" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email *</label>
+                        <input type="email" id="email" placeholder="example@mail.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-id-card"></i> Hujjat raqami (Passport yoki Metrika) *</label>
+                    <input type="text" id="documentNumber" placeholder="AA 1234567 yoki Metrika raqami" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-school"></i> Qaysi maktabni bitirgan *</label>
+                    <input type="text" id="school" placeholder="Maktab nomi va raqami" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fas fa-graduation-cap"></i> Yo'nalish tanlang *</label>
+                    <select id="directionSelect" required>
+                        <option value="">Yo'nalishni tanlang</option>
+                        <option>Kompyuter tarmoq dasturchisi</option>
+                        <option>Sotuvchi</option>
+                        <option>Tikuvchi</option>
+                        <option>Elektrik</option>
+                        <option>Payvandchi</option>
+                        <option>AVTO</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fab fa-telegram"></i> Telegram @username</label>
+                    <input type="text" id="telegramUsername" placeholder="Masalan: @goldendevuz">
+                    <small>Ixtiyoriy, siz bilan bog'lanish uchun</small>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <i class="fab fa-telegram"></i> Arizani yuborish
+                </button>
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ========== BOG'LANISH ========== -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Biz bilan <span class="highlight">bog‘laning</span></h2>
+        <div class="contact-box">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <h4>Telefon</h4>
+                    <p>+998 97 669 96 55</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-telegram"></i>
+                <div>
+                    <h4>Telegram</h4>
+                    <p>@texnikum_admin</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-instagram"></i>
+                <div>
+                    <h4>Instagram</h4>
+                    <p>@texnikum_uz</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-facebook"></i>
+                <div>
+                    <h4>Facebook</h4>
+                    <p>facebook.com/texnikum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Texnikum. Barcha huquqlar himoyalangan. Sayt <strong>WWC STUDIO</strong> tomonidan yaratilgan.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
